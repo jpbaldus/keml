@@ -48,6 +48,10 @@ If you generate "Model Code" (or "All") this will (re-)generate all code in this
 The generated code follows the Factory Pattern:
 There are java interfaces for each KEML type under src-gen/keml, and Impls for the types under src-gen/keml.impl.
 
+### Argumentation Framework Extension Recursive Edges
+This extensions allows users to model edges that points to edges, so called recursive edges. These extend the previous framework with modelling attempts for "find a solution-tasks.
+In graphML, a small workaround is required (see keml.io/README.md). All models created for the previous framework will work with this extension as well!
+
 ### Special care for keml.edit
 Since the keml edit project has some customizations, it is recommended to get it from the [keml.edit repository](https://github.com/keml-group/keml.edit). A later code generation does not overwrite the changes brought in by the keml.edit repository.
 For more details, check keml.edit's repository documentation.
